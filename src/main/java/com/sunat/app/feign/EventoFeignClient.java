@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "ms-eventos", url = "${eventos.service.url}")
+//@FeignClient(name = "ms-eventos", url = "${eventos.service.url}")
+@FeignClient(name = "ms-eventos")
 public interface EventoFeignClient {
 
 	@GetMapping("/eventos/{id}")
